@@ -1,3 +1,8 @@
+header{
+    width: 1600px;
+    height: 92px;
+    padding-top: 0px;
+}
 nav{
     display: flex;
     color: white;
@@ -22,5 +27,70 @@ nav .btn{
     padding: 12px 16px 12px 16px;
     margin: 40px;
     border-radius: 10000px;
-    background-color: #ffffff;
+}
+
+.about{
+    background-color: #1A0B2E;
+    width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.about .about-title{
+    text-align: center;
+    color:white;
+    padding-bottom: 79.5px;
+}
+.about .about-title .border{
+    width: 1200px;
+    border: 1px solid white;
+}
+
+.about .card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.about .line{
+    width: 1200px;
+    height: 1px;
+    background-color: rgb(113, 105, 105);
+    
+    
+}
+
+.card .card-section h1{
+    
+    color: #00FF88;
+}
+
+.card .card-section h5{
+    color: white;
+}
+
+.footer .image-container{
+    
+    padding-top: 0px;
+    background-image: url(./assets/footer-bg.png);
+    background-size: cover;
+    width: 1600px;
+    height: 412px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+
+.image-container .icon{
+    display: flex;
+    color: white;
+    gap: 40px;
 }
