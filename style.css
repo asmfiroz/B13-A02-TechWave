@@ -16,8 +16,6 @@ nav{
 }
 .logo .wave {
     background: linear-gradient(45deg, #ffd84a, #ff8a5c, #ff00a8, #a201ec);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
   }
@@ -70,6 +68,7 @@ nav{
     text-align: center;
 }
 .techwave .image .btn-group .btn1{
+    
     width: 201px;
     height: 44px;
     padding: 12px 25px;
@@ -93,6 +92,154 @@ nav{
     
 }
 
+.line{
+    height: 1px;
+    background-color: rgb(113, 105, 105);   
+}
+
+.about{
+    background-color: #1A0B2E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.about .about-title{
+    text-align: center;
+    color:white;
+    padding-bottom: 79.5px;
+}
+
+.about .card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.about .line{
+    width: 75%;
+    height: 1px;
+    background-color: rgb(113, 105, 105);   
+}
+
+.card .card-section h1{
+    
+    color: #00FF88;
+}
+
+.card .card-section h5{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.meet{
+    padding-bottom: 120px;
+    background-color: #1A0B2E;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+
+.box{
+    width: 80%;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #260e45;
+}
+
+.meet h1{
+    color: white;
+    text-align: center;
+}
+
+.meet .box{
+    display: flex;
+}
+
+.meet .box .box-image{
+    padding-right: 20px;
+}
+
+.social-icons{
+  display:flex;
+  gap:20px;
+  padding:40px;
+}
+
+.social-icons .icon{
+  width:40px;
+  height:40px;
+  border:2px solid rgba(255,255,255,0.3);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+}
+
+.icon i{
+  font-size:20px;
+  background: linear-gradient(
+    45deg,
+    #ffd84a,
+    #ff8a5c,
+    #ff00a8,
+    #a201ec
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+
+.footer .image-container{
+    
+    padding-top: 0px;
+    background-image: url(./assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:gray;
+    
+}
+
+.footer .image-container h1{
+    font-size: 3.5rem;
+}
+
+.image-container .icon{
+    display: flex;
+    color: gray;
+    gap: 20px;
+}
+
+.image-container .copyright{
+    padding-top: 30px;
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -113,5 +260,30 @@ nav{
         cursor: pointer;
     }
 
+
+    .about .card{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-container .icon{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: white;
+        gap: 40px;
+    }
+
+    .meet .box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .meet .box .box-image{
+        padding-left: 25%;
+    }
+
+    .box{
+        width: 75%;
+    }
     
 }
