@@ -139,7 +139,8 @@ nav{
 .why-choose{
     background-color: #230E3D;
     color: white;
-    padding: 120px 120px;
+    padding: 60px 120px 40px 120px;
+    margin-bottom: 0px;
 }
 
 .why-choose .title{
@@ -149,7 +150,7 @@ nav{
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
+    grid-auto-rows: auto;
     gap: 20px;
 }
 
@@ -175,9 +176,72 @@ nav{
     padding:50px;
 }
 
+.episode{
+    background-color: #1A0B2E;
+    color: white;
+    padding-top: 0;
+}
+
+.episode h1{
+    color: white;
+    text-align: center;
+    padding:20px 0 10px 0;
+    margin-top: 0px;
+}
+
+.why-choose h1, .why-choose h4, .why-choose p {
+    margin: 0;
+}
+
+.episode .video-row{
+    display:flex;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
 
 
+.video-row .video-card{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #281147;
+}
 
+.video-card .video-content{
+    padding: 10px;
+}
+
+.video-content .duration{
+    color: #00FF88;
+}
+
+.video-content p{
+    color: gray;
+}
+
+.video-card .video-thumbnail {
+    position: relative; 
+    cursor: pointer;     
+}
+
+.video-card .play-button {
+    position: absolute;         
+    top: 50%;                   
+    left: 50%;                  
+    transform: translate(-50%, -50%);  
+    font-size: 40px; 
+    color: white;          
+    background: linear-gradient(
+    45deg,#ffd84a,#ff8a5c,
+    #ff00a8,#a201ec);  
+    padding: 15px;             
+    border-radius: 50%;         
+    text-align: center;
+    pointer-events: none;       
+}
 
 
 .meet{
@@ -332,6 +396,10 @@ nav{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .episode .video-row{
+    display:grid;
+}
 
     
 }
